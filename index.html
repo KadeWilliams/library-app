@@ -8,6 +8,9 @@
     <title>Document</title>
     <script src="book.js" async></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+    </style>
 </head>
 
 <body>
@@ -19,15 +22,24 @@
         <input id="author" type="text">
 
         <label for="pages">Pages</label>
-        <input id="pages" type="text">
+        <input id="pages" type="number">
 
-        <label for="read">Read?</label>
-        <input id="read" type="text">
+        <div class="read">
+            <label for="read" class="read">Read</label>
+            <input id="read" class="read" type="checkbox">
+        </div>
 
         <button class="submit">Submit</button>
     </form>
-
-    <button class="print">Print Library</button>
+    <div class="grid-outer">
+        <!-- <div class="card">
+            <p class="title">kade</p>
+            <p class="author">kade</p>
+            <p class="pages">500</p>
+            <button class="beenRead">Read</button>
+            <button class="remove-btn">Remove</button>
+        </div> -->
+    </div>
 </body>
 
 </html>
