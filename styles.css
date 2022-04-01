@@ -54,8 +54,7 @@ form {
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    width: 100%;
+    margin: 10px !important;
 }
 .grid-outer {
     display: grid;
@@ -149,4 +148,9 @@ button.submit {
 }
 .notRead {
     background-color: rgb(184, 0, 0);
+}
+.explanation {
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 20px;
 }
