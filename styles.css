@@ -48,7 +48,34 @@ table {
 font-family: 'Kanit', sans-serif;
 font-family: 'Syne', sans-serif; 
 */
-
+@media screen and (min-width: 810px) {
+form {
+    display:flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.grid-outer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 10px;
+}
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+}
+}
+@media screen and (max-width: 809px) {
+    form.book {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 body {
     display: flex;
     align-items: center;
@@ -58,13 +85,6 @@ body {
     background-color: rgb(237, 237, 237);
     color: rgb(0, 0, 0);
     font-family: 'Kanit', sans-serif;
-}
-form {
-    display:flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
 }
 form > input {
     margin: 10px;
@@ -98,6 +118,7 @@ button.submit {
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 10px;
+    place-items: center;
 }
 .card {
     background-color: rgb(211, 211, 211);
