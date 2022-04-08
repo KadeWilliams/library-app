@@ -140,9 +140,6 @@ button.submit {
     padding: 5px;
     border-radius: 5px;
 }
-.card > button:first-of-type {
-
-}
 .beenRead {
     background-color: rgb(62, 187, 62);
 }
@@ -153,4 +150,6 @@ button.submit {
     font-size: 1.5rem;
     width: 50%;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
